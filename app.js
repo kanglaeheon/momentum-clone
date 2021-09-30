@@ -1,9 +1,9 @@
-const age = 31;
-function calculateKrAge(ageOfForeigner) {
-    ageOfForeigner + 2;
-    return "hello";
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+
+function onLoginBtnClick() {
+    const userName = loginInput.value;
+    console.log(userName);
 }
 
-const krAge = calculateKrAge(age);
-
-console.log(krAge);
+loginButton.addEventListener("click", onLoginBtnClick)
